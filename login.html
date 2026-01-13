@@ -1,0 +1,67 @@
+<!-- ========================= login.html ========================= -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Login | SIPT</title>
+<style>
+body{
+margin:0; height:100vh; display:flex; justify-content:center; align-items:center;
+font-family:Arial, sans-serif;
+background:linear-gradient(135deg,#0f766e,#14b8a6);
+}
+.login-box{
+background:#fff; padding:30px; width:360px;
+border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,.2);
+text-align:center;
+}
+h1{color:#0f766e; margin-bottom:8px;}
+p{color:#6b7280; font-size:14px; margin-bottom:20px;}
+label{display:block; text-align:left; margin-top:12px; color:#374151;}
+input{
+width:100%; padding:10px; margin-top:6px;
+border-radius:8px; border:1px solid #d1d5db;
+}
+button{
+width:100%; margin-top:20px; padding:12px;
+background:#14b8a6; color:#fff; border:none;
+border-radius:10px; font-size:15px; cursor:pointer;
+}
+button:hover{background:#0f766e;}
+</style>
+</head>
+<body>
+<div class="login-box">
+<h1>SIPT</h1>
+<p>Sistem Informasi Pendaftaran Tanah</p>
+
+
+<form onsubmit="return login()">
+<label>Username</label>
+<input type="text" id="username" required>
+
+
+<label>Password</label>
+<input type="password" id="password" required>
+
+
+<button type="submit">Masuk</button>
+</form>
+</div>
+
+
+<script>
+function login(){
+const u=document.getElementById('username').value;
+const p=document.getElementById('password').value;
+if(u==='admin1' && p==='admin123'){
+localStorage.setItem('login','true');
+window.location.href='sertifikat.html';
+}else{
+alert('Username atau password salah');
+}
+return false;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!-- ====================== pengajuan.html ====================== -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Pengajuan Sertifikat Baru | SIPT</title>
+<style>
+body{margin:0; font-family:Arial, sans-serif; background:#f0fdfa; padding:20px;}
+h1{color:#0f766e;}
+form{background:#fff; padding:20px; max-width:700px; border-radius:14px;}
+label{display:block; margin-top:12px; color:#065f46;}
+input,textarea{width:100%; padding:8px; margin-top:6px; border-radius:6px; border:1px solid #ccc;}
+button{margin-top:20px; padding:10px 16px; border:none; border-radius:8px;}
+.submit{background:#14b8a6; color:#fff;}
+</style>
+</head>
+<body>
+<script>
+if(localStorage.getItem('login')!=='true') location.href='login.html';
+</script>
+
+
+<h1>Pengajuan Sertifikat Tanah Baru</h1>
+<form>
+<label>Nomor Pengajuan</label>
+<input type="text">
+
+
+<label>Tanggal Pengajuan</label>
+<input type="date">
+
+
+<label>Alamat</label>
+<input type="text">
+
+
+<label>Luas Tanah (m²)</label>
+<input type="number">
+
+
+<label>Nama Pemilik / Pengelola</label>
+<input type="text">
+
+
+<label>Catatan Tambahan</label>
+<textarea rows="4"></textarea>
+
+
+<button class="submit">Ajukan</button>
+<a href="sertifikat.html">Kembali</a>
+</form>
+</body>
+</html>

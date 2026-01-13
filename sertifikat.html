@@ -1,0 +1,51 @@
+<!-- ====================== sertifikat.html ====================== -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Sertifikat Tanah | SIPT</title>
+<style>
+body{margin:0; font-family:Arial, sans-serif; background:#f0fdfa; padding:20px;}
+h1{color:#0f766e;}
+.top{display:flex; justify-content:space-between; margin-bottom:15px;}
+button{background:#14b8a6; color:#fff; border:none; padding:10px 14px; border-radius:8px; cursor:pointer;}
+table{width:100%; background:#fff; border-collapse:collapse;}
+th,td{padding:10px; border-bottom:1px solid #e5e7eb;}
+th{background:#ccfbf1; color:#065f46;}
+</style>
+</head>
+<body>
+<script>
+if(localStorage.getItem('login')!=='true') location.href='login.html';
+</script>
+
+
+<h1>Daftar Sertifikat Tanah</h1>
+<div class="top">
+<div></div>
+<a href="pengajuan.html"><button>+ Pengajuan Sertifikat Baru</button></a>
+</div>
+
+
+<table>
+<thead>
+<tr>
+<th>No Sertifikat</th>
+<th>Lokasi</th>
+<th>Luas (m²)</th>
+<th>Pemilik</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ST-001</td>
+<td>Ngestiharjo</td>
+<td>500</td>
+<td>Pemda</td>
+<td>Aktif</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
